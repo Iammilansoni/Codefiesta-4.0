@@ -1,4 +1,5 @@
 import React, { memo, useState, useEffect, useRef, useCallback } from 'react';
+// eslint-disable-next-line no-unused-vars -- motion is used extensively in JSX elements
 import { motion, AnimatePresence } from 'framer-motion';
 import { useIntersectionLoader } from '../hooks/useIntersectionLoader';
 

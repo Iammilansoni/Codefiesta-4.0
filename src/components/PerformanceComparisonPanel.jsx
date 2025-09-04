@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// eslint-disable-next-line no-unused-vars -- motion is used extensively in JSX elements
 import { motion } from 'framer-motion';
 import { usePerformanceMonitor } from '../hooks/usePerformanceMonitor';
 

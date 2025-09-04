@@ -4,6 +4,7 @@ import {
     useMotionValue,
     useSpring,
     useInView,
+    // eslint-disable-next-line no-unused-vars -- motion is used extensively in JSX elements
     motion,
     LazyMotion,
     domAnimation
