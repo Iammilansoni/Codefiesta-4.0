@@ -16,12 +16,24 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          motion: ['framer-motion']
+          motion: ['framer-motion'],
+          three: ['three', '@react-three/fiber', '@react-three/drei']
         }
+      },
+      external: (id) => {
+        // Handle three-mesh-bvh incompatibility
+        if (id.includes('three-mesh-bvh')) {
+          return false;
+        }
+        return false;
       }
     }
   },
   optimizeDeps: {
-    include: ['react', 'react-dom', 'framer-motion']
+    include: ['react', 'react-dom', 'framer-motion', 'three', '@react-three/fiber', '@react-three/drei'],
+    exclude: ['three-mesh-bvh']
+  },
+  define: {
+    global: 'globalThis'
   }
 })

@@ -15,7 +15,7 @@ const Timeline = lazy(() =>
   import(/* webpackChunkName: "timeline-section" */ "./Com/Timeline")
 );
 const Star = lazy(() => 
-  import(/* webpackChunkName: "themes-section" */ "./Com/StarFallback")
+  import(/* webpackChunkName: "themes-section" */ "./Com/Star")
 );
 const Teams = lazy(() => 
   import(/* webpackChunkName: "teams-section" */ "./Com/Teams")
@@ -87,7 +87,7 @@ const App = () => {
         // Then preload remaining components
         setTimeout(() => {
           Promise.all([
-            import("./Com/StarFallback"),
+            import("./Com/Star"),
             import("./Com/PrizesRewardsPage"),
             import("./Com/MentorTitle"),
             import("./Com/Glimespage"),
