@@ -1,0 +1,28 @@
+
+
+/* Font files are stored in the nested `fonts/` folder next to this CSS.
+   Use correct relative paths and formats for .otf (opentype). */
+
+@font-face {
+  font-family: 'loadfont';
+  src: url('./fonts/fonnts.com-Rigid_Square_Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'loadfont';
+  src: url('./fonts/fonnts.com-Rigid_Square_SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'loadfont';
+  src: url('./fonts/fonnts.com-Rigid_Square_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
