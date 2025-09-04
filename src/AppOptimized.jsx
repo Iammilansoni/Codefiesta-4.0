@@ -1,4 +1,5 @@
 import React, { Suspense, useRef, lazy, useEffect, memo, useState } from "react";
+// eslint-disable-next-line no-unused-vars -- motion is used in JSX elements
 import { motion, LazyMotion, domAnimation } from "framer-motion";
 import Loading from "./Com/Loading";
 import Forntpage from "./Com/Forntpage";
